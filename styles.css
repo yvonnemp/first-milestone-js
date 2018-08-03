@@ -6,3 +6,8 @@ body {
 a {
 	color: #f4cbcb;
 }
+
+#projects {
+    border: 1px solid #e4cccc;
+    padding: 10px;
+}
