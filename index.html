@@ -22,7 +22,7 @@
         <div id="JavaScript_Basics">
             <p>1. JavaScript Basics</p>
         </div>
-        <div id="Silly_Story_Generator">
+        <div>
             <p>2. Silly Story Generator <span class="brief">(hover to see project's brief here)</span></p>
             <p><strong>My Docs</strong></p>
             <ul>
@@ -30,7 +30,23 @@
             </ul>
         </div>
     </section>
+    <section id="project_section">
+    	<div class="project_container">
+	    	<h2 id="Silly_story_generator">Silly Story Generator</h2>
+	    	<label for="custom_name">Enter custom name:</label>
+	        <input type="text" id="custom_name" placeholder="Enter custom name">
+	        <br>
+	        <label for="us">US</label>
+	        <input type="radio" id="us" name="usphil" checked>
+	        <label for="phil">Philippines</label>
+	        <input type="radio" id="phil" name="usphil">
+			<br>
+			<button class="randomize">Generate random story</button>
+			<p class="story"></p>
+    	</div>
+    </section>
     <script src="basic.js"></script>
+    <script src="silly_story_generator.js"></script>
 </body>
 
 </html>
