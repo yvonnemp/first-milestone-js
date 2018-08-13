@@ -8,25 +8,20 @@ function randomValueFromArray(array){
   return array[Math.floor(Math.random()*array.length)];
 }
 
-2. RAW TEXT STRINGS
+//2. RAW TEXT STRINGS
 
-It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.
+var storyText = "It was 94 fahrenheit outside, so $insertX went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
+var insertX = ["Willy the Goblin", "Big Daddy", "Father Christmas"];
+var insertY = ["the soup kitchen", "Disneyland", "the White House"];
+var insertX = ["spontaneously combusted", "melted into a puddle on the sidewalk", "turned into a slug and crawled away"];
 
-Willy the Goblin
-Big Daddy
-Father Christmas
-
-the soup kitchen
-Disneyland
-the White House
-
-spontaneously combusted
-melted into a puddle on the sidewalk
-turned into a slug and crawled away
-
-3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
+//3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
 
 randomize.addEventListener('click', result);
+
+var newStory = storyText;
+var xItem, yItem, zItem;
+xItem yItem zItem = randomValueFromArray();
 
 function result() {
 
@@ -35,7 +30,7 @@ function result() {
 
   }
 
-  if(document.getElementById("uk").checked) {
+  if(document.getElementById("phil").checked) {
     var weight = Math.round(300);
     var temperature =  Math.round(94);
 
